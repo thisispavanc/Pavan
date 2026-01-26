@@ -1,0 +1,47 @@
+---
+Title: Pavan C — AI Product Engineer Portfolio
+Description: Personal portfolio showcasing AI product engineering expertise in Large Language Models, Retrieval Augmented Generation, AI automation, and full product lifecycle development.
+
+Site Purpose:
+- Showcase AI product engineering portfolio and expertise
+- Demonstrate proven impact through measurable project outcomes
+- Connect with potential collaborators, clients, and employers
+- Share knowledge about AI systems, LLMs, RAG, and automation
+
+Key Topics Covered:
+- Large Language Models (LLMs)
+- Retrieval Augmented Generation (RAG)
+- Generative AI & Prompt Engineering
+- AI Automation & Workflow Optimization
+- Product Engineering & Full Stack Development
+- AI Product Strategy
+- Cost Reduction & Revenue Growth through AI
+
+Featured Projects:
+1. Lawyer Ji - AI-powered legal document automation
+2. Praan Health - Healthcare AI automation system
+3. Onboarding Automation - Reduced onboarding from 14 days to 1-2 days
+4. Master Mapping - Large-scale data mapping and processing
+
+Professional Experience:
+- Saison OMNI: Building AI solutions for automation and business impact
+- Focus on practical AI implementations with measurable ROI
+- Full product lifecycle: Research, Development, Deployment, Optimization
+
+Key Skills:
+- AI/LLM: LangChain, Prompt Engineering, Fine-tuning, Embeddings
+- Backend: Python, FastAPI, PostgreSQL
+- Frontend: React, TypeScript, Next.js
+- Cloud: AWS, Firebase
+
+Contact Information:
+- Website: https://thisispavanc.me
+- Alternative: https://pavanc.dev
+- Email: Available through portfolio contact form
+- Professional: Open to consulting, contracting, and full-time opportunities
+
+Author Names:
+- Pavan C
+- Pavan Shetty
+- thisispavanc
+---

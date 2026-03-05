@@ -1,0 +1,88 @@
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.pageHeader {
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 3rem;
+}
+
+.pageTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .pageTitle {
+    font-size: 2.5rem;
+  }
+}
+
+.pageDescription {
+  font-size: 1.125rem;
+  color: var(--muted-foreground);
+  max-width: 40rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--foreground);
+}
+
+.textContent {
+  line-height: 1.7;
+  color: var(--foreground);
+  space: 1rem;
+}
+
+.paragraph {
+  margin-bottom: 1rem;
+  color: var(--muted-foreground);
+}
+
+.educationList {
+  space: 1.5rem;
+}
+
+.educationItem {
+  padding: 1.5rem;
+  border-left: 4px solid var(--accent);
+  background-color: rgba(99, 102, 241, 0.05);
+}
+
+.educationTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.educationSchool {
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.educationDate {
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}

@@ -185,7 +185,7 @@ export default function RootLayout({
           })}
         </script>
       </head>
-      <body className="antialiased">
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

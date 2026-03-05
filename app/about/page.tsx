@@ -1,8 +1,10 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowLeft, Download } from 'lucide-react'
+import { Download } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { ThemeToggle } from '@/components/theme-toggle'
+import styles from './about.module.css'
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -13,45 +15,89 @@ const fadeInUp = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div style={{ minHeight: '100vh' }}>
       {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-sm">
-        <div className="mx-auto flex max-w-5xl items-center justify-between px-4 sm:px-6 py-4">
-          <Link href="/" className="text-lg font-semibold text-foreground hover:text-primary transition" title="Back to Home">
+      <header style={{
+        position: 'sticky',
+        top: 0,
+        zIndex: 50,
+        borderBottom: '1px solid var(--border)',
+        backgroundColor: 'rgba(var(--background), 0.8)',
+        backdropFilter: 'blur(10px)',
+      }}>
+        <div style={{
+          maxWidth: '80rem',
+          margin: '0 auto',
+          padding: '1rem 1.5rem',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        }}>
+          <Link href="/" style={{
+            fontSize: '1.125rem',
+            fontWeight: 600,
+            color: 'var(--foreground)',
+            textDecoration: 'none',
+          }}>
             PC
           </Link>
-          <h1 className="text-lg font-semibold text-foreground">About Pavan</h1>
-          <a
-            href="https://drive.google.com/file/d/1enCSAvKdOh1Qc73AcrtyMLEMma9if0wB/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm px-4 py-2 border border-foreground text-foreground hover:bg-primary/10 transition-colors font-medium"
-          >
-            Resume
-          </a>
+          <h1 style={{
+            fontSize: '1.125rem',
+            fontWeight: 600,
+            color: 'var(--foreground)',
+          }}>About Pavan</h1>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <a
+              href="https://drive.google.com/file/d/1enCSAvKdOh1Qc73AcrtyMLEMma9if0wB/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                fontSize: '0.875rem',
+                padding: '0.5rem 1rem',
+                border: '1px solid var(--foreground)',
+                color: 'var(--foreground)',
+                textDecoration: 'none',
+                fontWeight: 500,
+              }}
+            >
+              Resume
+            </a>
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 
-      <main className="max-w-3xl mx-auto px-4 sm:px-6 py-20">
+      <main style={{
+        maxWidth: '48rem',
+        margin: '0 auto',
+        padding: '5rem 1rem',
+      }}>
         {/* Profile Image & Title */}
-        <motion.section {...fadeInUp} className="space-y-8 mb-16">
-          <div className="flex flex-col md:flex-row items-start gap-8">
-            {/* Profile Picture */}
-            <div className="flex-shrink-0">
-              <img
-                src="https://media.licdn.com/dms/image/v2/D5603AQHPdzM7rjwECw/profile-displayphoto-shrink_200_200/B56ZY_vXEvGQAg-/0/1744826103874?e=1770854400&v=beta&t=ZTx-EF5vniwE1bRgNx7Af61RzDSAUwc_jZX8gnFwtPQ"
-                alt="Pavan C"
-                className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-2 border-primary/30"
-              />
-            </div>
-
+        <motion.section {...fadeInUp} style={{ marginBottom: '4rem' }}>
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '2rem',
+          }}>
             {/* Title & Intro */}
-            <div className="flex-1 space-y-6">
+            <div style={{ space: '1.5rem' }}>
               <div>
-                <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-2">A Little More About Me</h2>
-                <p className="text-sm text-muted-foreground">AI Product Engineer</p>
+                <h2 style={{
+                  fontSize: '2rem',
+                  fontWeight: 700,
+                  marginBottom: '0.5rem',
+                  color: 'var(--foreground)',
+                }}>A Little More About Me</h2>
+                <p style={{
+                  fontSize: '0.875rem',
+                  color: 'var(--muted-foreground)',
+                }}>AI Product Engineer</p>
               </div>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p style={{
+                fontSize: '1.125rem',
+                color: 'var(--muted-foreground)',
+                lineHeight: 1.6,
+              }}>
                 I'm Pavan C, an AI Product Engineer passionate about building intelligent systems that solve real-world problems. My journey has been focused on creating AI solutions that deliver measurable impact.
               </p>
             </div>
@@ -59,48 +105,104 @@ export default function AboutPage() {
         </motion.section>
 
         {/* About Me - Expanded */}
-        <motion.section {...fadeInUp} className="space-y-6 mb-16">
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p>
+        <motion.section {...fadeInUp} style={{ marginBottom: '4rem' }}>
+          <div style={{
+            space: '1rem',
+            color: 'var(--muted-foreground)',
+            lineHeight: 1.7,
+          }}>
+            <p style={{ marginBottom: '1rem' }}>
               I specialize in leveraging Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and automation to build products that transform business operations. My work focuses on reducing manual effort, cutting operational costs, and enabling revenue growth through intelligent systems.
             </p>
-            <p>
+            <p style={{ marginBottom: '1rem' }}>
               Throughout my career, I've worked on challenging problems like automating client onboarding processes, building AI-powered field mapping solutions, and developing health tech platforms. I thrive at the intersection of product thinking and technical execution, translating complex AI capabilities into user-friendly solutions.
             </p>
-            <p>
+            <p style={{ marginBottom: '1rem' }}>
               When I'm not coding, I'm exploring the latest developments in AI, contributing to open-source projects, or learning new technologies. I believe in building products that not only leverage cutting-edge technology but also deliver tangible value to users and businesses.
             </p>
           </div>
         </motion.section>
 
-    
         {/* Resume Box - Prominent */}
-        <motion.section {...fadeInUp} className="border-2 border-primary/30 bg-accent/5 p-8 rounded space-y-4">
-          <div className="space-y-2">
-            <h3 className="text-2xl font-bold text-foreground">Resume</h3>
-            <p className="text-muted-foreground leading-relaxed">
+        <motion.section {...fadeInUp} style={{
+          border: '2px solid rgba(99, 102, 241, 0.3)',
+          backgroundColor: 'rgba(99, 102, 241, 0.05)',
+          padding: '2rem',
+          borderRadius: '0.5rem',
+        }}>
+          <div style={{ marginBottom: '1rem' }}>
+            <h3 style={{
+              fontSize: '1.5rem',
+              fontWeight: 700,
+              marginBottom: '0.5rem',
+              color: 'var(--foreground)',
+            }}>Resume</h3>
+            <p style={{
+              color: 'var(--muted-foreground)',
+              lineHeight: 1.6,
+            }}>
               View my complete professional experience, education, and technical skills.
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 pt-2">
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '1rem',
+            marginTop: '1rem',
+          }}>
             <a
               href="https://drive.google.com/file/d/1enCSAvKdOh1Qc73AcrtyMLEMma9if0wB/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 px-6 py-3 border border-foreground bg-primary text-primary-foreground hover:bg-primary/90 transition font-medium"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.5rem',
+                padding: '0.75rem 1.5rem',
+                border: '1px solid var(--foreground)',
+                backgroundColor: 'var(--primary)',
+                color: 'var(--primary-foreground)',
+                textDecoration: 'none',
+                fontWeight: 500,
+                width: 'fit-content',
+              }}
             >
               <Download size={20} />
               View Resume
             </a>
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-2 px-6 py-3 border border-border text-foreground hover:bg-accent/5 transition font-medium"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.5rem',
+                padding: '0.75rem 1.5rem',
+                border: '1px solid var(--border)',
+                backgroundColor: 'transparent',
+                color: 'var(--foreground)',
+                textDecoration: 'none',
+                fontWeight: 500,
+                width: 'fit-content',
+              }}
             >
               Get in Touch
             </Link>
           </div>
         </motion.section>
+
+        <footer style={{
+          marginTop: '2rem',
+          paddingTop: '2rem',
+          borderTop: '1px solid var(--border)',
+          textAlign: 'center',
+          fontSize: '0.875rem',
+          color: 'var(--muted-foreground)',
+        }}>
+          <p>Pavan C © 2025. Built with Next.js.</p>
+        </footer>
       </main>
     </div>
   )

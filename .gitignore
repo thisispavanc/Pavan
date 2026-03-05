@@ -8,3 +8,22 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Node.js and Next.js
+node_modules/
+.next/
+.env
+.env.local
+.env.*.local
+*.pem
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

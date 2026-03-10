@@ -64,6 +64,16 @@ export default function Portfolio() {
 
   const experience = [
     {
+      role: "Developer Intern",
+      company: "TANUH.ai (IISc Startup)",
+      period: "Dec 2025 – Present",
+      achievements: [
+        "Contributing to AI-driven healthcare systems at a Ministry of Education–funded AI Centre of Excellence, focused on scalable point-of-care solutions for non-communicable diseases (NCDs)",
+        "Prototyped an end-to-end PHQ-9 mental health mobile application with JWT-based authentication, validated questionnaire flows, scoring logic, and clinical result interpretation",
+        "Executed database migration and system documentation for a breast cancer detection platform, gaining hands-on understanding of production architecture and feature enhancement workflows",
+      ],
+    },
+    {
       role: "AI Product Intern",
       company: "Saison OMNI India (Aumnee)",
       period: "Aug 2025 – Nov 2025",
@@ -163,7 +173,7 @@ export default function Portfolio() {
                 </Link>
               ))}
               <a
-                href="https://drive.google.com/file/d/1enCSAvKdOh1Qc73AcrtyMLEMma9if0wB/view?usp=sharing"
+                href="https://drive.google.com/file/d/1MKzgWt0aNqj4S1mh06l8O91aDmwE-Jxj/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm px-4 py-2 border border-foreground text-foreground hover:bg-primary/10 transition-colors font-medium"
@@ -211,7 +221,7 @@ export default function Portfolio() {
                   </Link>
                 ))}
                 <a
-                  href="https://drive.google.com/file/d/1enCSAvKdOh1Qc73AcrtyMLEMma9if0wB/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1MKzgWt0aNqj4S1mh06l8O91aDmwE-Jxj/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsMenuOpen(false)}
@@ -242,7 +252,7 @@ export default function Portfolio() {
               </div>
               <div className="flex-shrink-0">
                 <img
-                  src="https://media.licdn.com/dms/image/v2/D5603AQHPdzM7rjwECw/profile-displayphoto-shrink_200_200/B56ZY_vXEvGQAg-/0/1744826103874?e=1770854400&v=beta&t=ZTx-EF5vniwE1bRgNx7Af61RzDSAUwc_jZX8gnFwtPQ"
+                  src="https://media.licdn.com/dms/image/v2/D5603AQHPdzM7rjwECw/profile-displayphoto-shrink_200_200/B56ZY_vXEvGQAg-/0/1744826103874?e=1774483200&v=beta&t=X3NwN4ajTH8kl1Pqa48q4-wqNYKnQy8BVlbx0sdWeAc"
                   alt="Pavan C"
                   className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-primary/30 shadow-lg"
                 />

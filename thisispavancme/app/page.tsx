@@ -78,9 +78,9 @@ export default function Portfolio() {
       company: "Saison OMNI India (Aumnee)",
       period: "Aug 2025 – Nov 2025",
       achievements: [
-        "Designed and deployed Client Onboarding Automation System reducing processing time from 14 days to 1–2 days",
-        "Built AI Master Mapping Solution automating 3200+ field mappings per client with 90% reduction in manual effort",
-        "Partnered with clients and designers to deliver user-focused features bridging business goals with engineering execution",
+        "Engineered a comprehensive Client Onboarding Automation System leveraging AI and workflow optimization to transform a historically manual 14-day process into an efficient 1–2 day automated pipeline, directly enabling 10–15% revenue growth through faster time-to-value delivery",
+        "Architected and deployed an intelligent AI Master Mapping Solution that automated complex field normalization and schema discovery across 3200+ client data mappings, reducing manual engineering effort by 90% and accelerating client integration cycles from 6–7 days to under 0.5 days",
+        "Collaborated extensively with enterprise clients and cross-functional design teams to translate business requirements into scalable technical solutions, ensuring seamless product delivery that bridged strategic business objectives with robust engineering execution",
       ],
     },
   ]
